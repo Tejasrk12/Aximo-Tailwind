@@ -1,0 +1,324 @@
+<!-- Tailwind + GSAP  -->
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us | Aximo - Creative Agency Tailwind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Header Section Start  -->
+        <header class="section-header fixed w-full z-50">
+            <nav class="bg-black py-4">
+                <div
+                    class="flex justify-between flex-row-reverse xl:flex-row 2xl:flex-row items-center mx-5 xl:mx-16 2xl:mx-80">
+                    <div
+                        class="menu w-8 h-7 flex justify-center items-center 2xl:items-center cursor-pointer lg:hidden xl:hidden 2xl:hidden">
+                        <div
+                            class="hamburger relative w-[27px] h-[3px] bg-white pointer-events-none block xl:hidden 2xl:hidden before:content-[''] before:absolute before:w-[27px] before:h-[3px] before:bg-white before:translate-y-2 after:content-[''] after:absolute after:w-[27px] after:h-[3px] after:bg-white after:-translate-y-2">
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="logo">
+                            <a href="./index.html"><img src="./assets/img/logo-buttery-white.svg" alt=""></a>
+                        </div>
+                        <div class="menu xl:ml-2 2xl:ml-2">
+                            <ul id="show"
+                                class="shadow-NavUl h-NavUl transition-all duration-[600ms] ease-in flex xl:gap-0 2xl:gap-0 fixed xl:static 2xl:static flex-col xl:flex-row 2xl:flex-row items-center w-3/4 xl:w-full 2xl:w-full top-[60px] -left-[100%] 2xl:-left-0 bg-white z-10 xl:bg-transparent 2xl:bg-transparent ">
+                                <li class="w-full xl:w-[100px] 2xl:w-[100px] xl:text-center 2xl:text-center">
+                                    <a class="text-black xl:text-white 2xl:text-white font-medium text-base block py-3 w-full border-b-2 xl:border-b-0 2xl:border-b-0 border-gray-100 px-4"
+                                        href="./index.html">Home</a>
+                                </li>
+                                <li class="w-full xl:w-[100px] 2xl:w-[100px] xl:text-center 2xl:text-center">
+                                    <a class="text-black xl:text-white 2xl:text-white font-medium text-base block py-3 w-full border-b-2 xl:border-b-0 2xl:border-b-0 border-gray-100 px-4"
+                                        href="#">About Us</a>
+                                </li>
+                                <li class="w-full xl:w-[100px] 2xl:w-[100px] xl:text-center 2xl:text-center">
+                                    <a class="text-black xl:text-white 2xl:text-white font-medium text-base block py-3 w-full border-b-2 xl:border-b-0 2xl:border-b-0 border-gray-100 px-4"
+                                        href="#">Services</a>
+                                </li>
+                                <li class="w-full xl:w-[100px] 2xl:w-[100px] xl:text-center 2xl:text-center">
+                                    <a class="text-black xl:text-white 2xl:text-white font-medium text-base block py-3 w-full border-b-2 xl:border-b-0 2xl:border-b-0 border-gray-100 px-4"
+                                        href="#">Gallery</a>
+                                </li>
+                                <li class="w-full xl:w-[100px] 2xl:w-[100px] xl:text-center 2xl:text-center">
+                                    <a class="text-black xl:text-white 2xl:text-white font-medium text-base block py-3 w-full border-b-2 xl:border-b-0 2xl:border-b-0 border-gray-100 px-4"
+                                        href="./blog.html">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hidden xl:flex 2xl:flex">
+                        <a href="./contact-us.html"
+                            class="px-4 xl:px-10 2xl:px-10 py-3 text-sm xl:text-base 2xl:text-base font-inter rounded-full font-bold border-2 border-black bg-lime-400 shadow-bottom hover:shadow-none ">
+                            Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header Section End -->
+
+        <!-- Banner Section Start -->
+        <section class="section-banner relative pt-[60px] xl:pt-[84px] 2xl:pt-[84px]">
+            <div class="bg-black">
+                <div class="py-14 xl:py-30 2xl:py-32 mx-10 xl:mx-16 2xl:mx-80">
+                    <div
+                        class="relative grid grid-cols-1 items-center justify-center gap-x-[90px] gap-y-16 ">
+                        <div class="banner-content relative text-center xl:text-left 2xl:text-left">
+                            <h1 class="text-center text-white font-syne text-5xl xl:text-8xl 2xl:text-8xl font-bold mb-8 xl:mb-10 2xl:mb-10">Contact Us</h1>
+                            <h6 class="text-center text-white font-inter text-lg xl:text-xl 2xl:text-xl flex justify-center gap-4">Home <span>></span> <span class="text-colorLightLime">Contact Us</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner Section End -->
+
+        <!-- Contact Form Start  -->
+        <section class="contact-form-section relative overflow-x-hidden">
+            <div class="pt-16 xl:pt-32 2xl:pt-32 mx-5 xl:mx-16 2xl:mx-80 grid lg:grid-cols-[1fr_minmax(0,0.5fr)]">
+                <h2 class="section-title text-black text-left">
+                    Contact us for a
+                    <img src="./assets/img/shape-light-lime-5-arms-star.svg" class="inline-flex w-8 xl:w-14 2xl:w-14">
+                    personal experience
+                </h2>
+            </div>
+
+            <div class="mx-8 xl:mx-16 2xl:mx-80 pb-16 xl:pb-32 2xl:pb-32 gap-16 grid lg:grid-cols-[1fr_minmax(0,0.6fr)]">
+                <div class="left-box relative flex flex-col items-center justify-center overflow-hidden rounded-3xl border border-black p-7">
+                    <div class="input-box flex flex-col w-full mb-5">
+                        <label for="" class="font-extrabold font-inter ml-5 mb-2">Your name</label>
+                        <input type="text" class="border rounded-full border-black p-4">
+                    </div>
+                    <div class="input-box flex flex-col w-full mb-5">
+                        <label for="" class="font-extrabold font-inter ml-5 mb-2">Email Address</label>
+                        <input type="text" class="border rounded-full border-black p-4">
+                    </div>
+                    <div class="input-box flex flex-col w-full mb-5">
+                        <label for="" class="font-extrabold font-inter ml-5 mb-2">Phone No</label>
+                        <input type="text" class="border rounded-full border-black p-4">
+                    </div>
+                    <div class="input-box flex flex-col w-full mb-5">
+                        <label for="" class="font-extrabold font-inter ml-5 mb-4">Write your message here...</label>
+                        <input type="textarea" class="border rounded-3xl border-black p-4 min-h-52">
+                    </div>
+                    <div class="contact-btn w-full">
+                        <a href="#" class="bg-black text-white border-2 border-black shadow-bottom hover:shadow-none items-center inline-flex gap-10 py-4 px-8 text-base xl:text-lg 2xl:text-lg font-bold rounded-full">Send Message</a>
+                    </div>
+                </div>
+                <div class="right-box bg-black rounded-3xl hidden xl:block 2xl:block xl:mt-20">
+                    <img src="./assets/img/contact-img.jpg" class="h-full w-full object-full rounded-3xl border-4 border-black">
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form Out End -->
+
+         <!-- Contact Information Start  -->
+         <section class="contact-information-section relative overflow-x-hidden">
+             <div class="mx-5 xl:mx-16 2xl:mx-80">
+                 <h2 class="section-title text-black text-center">
+                    Contact Information
+                    <img src="./assets/img/shape-light-lime-5-arms-star.svg" class="inline-flex w-8 xl:w-14 2xl:w-14">
+                </h2>
+                <div class="contact-inner grid grid-cols-1 xl:grid-cols-3 2xl:grid-cols-3 gap-5 ">
+                    <div class="contact-box flex flex-row gap-x-6 items-start bg-black border border-black rounded-2xl py-7 px-5 ">
+                        <img src="./assets/img/icon-buttery-white-phone.svg" class="w-10">  
+                        <div class="flex flex-col">
+                            <h3 class="text-white font-inter font-bold text-xl mb-3">Call us</h3>
+                            <h4 class="text-white font-inter text-lg">+012-345-6789</h4>
+                            <h4 class="text-white font-inter text-lg">+012-345-6789</h4>
+                        </div>
+                    </div>
+                    <div class="contact-box flex flex-row gap-x-6 items-start bg-black border border-black rounded-2xl py-7 px-5 ">
+                        <img src="./assets/img/icon-buttery-white-mail.svg" class="w-10">  
+                        <div class="flex flex-col">
+                            <h3 class="text-white font-inter font-bold text-xl mb-3">Email us</h3>
+                            <h4 class="text-white font-inter text-lg">example@gmail.com</h4>
+                            <h4 class="text-white font-inter text-lg">example@gmail.com</h4>
+                        </div>
+                    </div>
+                    <div class="contact-box flex flex-row gap-x-6 items-start bg-black border border-black rounded-2xl py-7 px-5 ">
+                        <img src="./assets/img/icon-buttery-white-location-marker.svg" class="w-10">  
+                        <div class="flex flex-col">
+                            <h3 class="text-white font-inter font-bold text-xl mb-3">Office address</h3>
+                            <h4 class="text-white font-inter text-lg">4132 Thornridge City, New York.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="map border-[2px] border-black rounded-2xl h-[400px] xl:h-[600px] 2xl:h-[600px] mt-10 xl:mt-16 2xl:mt-16 mb-10">
+                    <iframe class="h-full w-full rounded-2xl" src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Information Start  -->
+
+        <div class="py-16 xl:py-32 2xl:py-32 xl:mx-16 2xl:mx-80" >
+            <hr class="h-1 bg-gray-100">
+        </div>
+
+        <!-- FAQ Start  -->
+        <section class="contact-faq-section relative overflow-x-hidden">
+            <div class="mx-5 xl:mx-16 2xl:mx-80 pb-16 xl:pb-32 2xl:pb-32">
+                <h2 class="section-title text-black text-center xl:w-6/12 2xl:w-8/12 m-auto">
+                    These FAQs help
+                   <img src="./assets/img/shape-light-lime-5-arms-star.svg" class="inline-flex w-8 xl:w-14 2xl:w-14">
+                   clients learn about us
+               </h2>
+               <div class="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 gap-5">
+                    <ul class="flex flex-col gap-y-7">
+                        <li class="">
+                            <h4 class="font-syne text-2xl xl:text-3xl 2xl:text-3xl font-bold mb-4 relative pl-10 before:absolute before:left-0 before:top-1 before:h-[30px] before:w-[30px] before:bg-[url(./assets/img/icon-lightlime-question.svg)]">What services does agency offer?</h4>
+                            <p class="font-inter text-lg leading-8 ml-10">Clients often seek to understand the range of design services an agency provides, such as graphic design, web design, branding.</p>
+                        </li>
+                        <li class="">
+                            <h4 class="font-syne text-2xl xl:text-3xl 2xl:text-3xl font-bold mb-4 relative pl-10 before:absolute before:left-0 before:top-1 before:h-[30px] before:w-[30px] before:bg-[url(./assets/img/icon-lightlime-question.svg)]">What is your design process like?</h4>
+                            <p class="font-inter text-lg leading-8 ml-10">Explaining the design agency's process from initial concept to final delivery helps clients understand what to expect.</p>
+                        </li>
+                        <li class="">
+                            <h4 class="font-syne text-2xl xl:text-3xl 2xl:text-3xl font-bold mb-4 relative pl-10 before:absolute before:left-0 before:top-1 before:h-[30px] before:w-[30px] before:bg-[url(./assets/img/icon-lightlime-question.svg)]">How much does design work cost?</h4>
+                            <p class="font-inter text-lg leading-8 ml-10">The cost of our design services varies depending on the scope of the project. We provide customized quotes after discussing requirements.</p>
+                        </li>
+                    </ul>
+                    <ul class="flex flex-col gap-y-7">
+                        <li class="">
+                            <h4 class="font-syne text-2xl xl:text-3xl 2xl:text-3xl font-bold mb-4 relative pl-10 before:absolute before:left-0 before:top-1 before:h-[30px] before:w-[30px] before:bg-[url(./assets/img/icon-lightlime-question.svg)]">What's your design process like?</h4>
+                            <p class="font-inter text-lg leading-8 ml-10">Our design process typically involves discovery, concept development, design, revisions based on feedback, and finalization.</p>
+                        </li>
+                        <li class="">
+                            <h4 class="font-syne text-2xl xl:text-3xl 2xl:text-3xl font-bold mb-4 relative pl-10 before:absolute before:left-0 before:top-1 before:h-[30px] before:w-[30px] before:bg-[url(./assets/img/icon-lightlime-question.svg)]">How do you handle user feedback?</h4>
+                            <p class="font-inter text-lg leading-8 ml-10">We value client feedback and work closely with you to make sure user happy with the final design. We offer a specific number of revisions.</p>
+                        </li>
+                        <li class="">
+                            <h4 class="font-syne text-2xl xl:text-3xl 2xl:text-3xl font-bold mb-4 relative pl-10 before:absolute before:left-0 before:top-1 before:h-[30px] before:w-[30px] before:bg-[url(./assets/img/icon-lightlime-question.svg)]">Can we see samples of your work?</h4>
+                            <p class="font-inter text-lg leading-8 ml-10">Yes, we're proud to showcase a portfolio of our previous projects. You can find examples of our work on our website or view our portfolio.</p>
+                        </li>
+                    </ul>
+               </div>
+           </div>
+       </section>
+       <!-- FAQ Start  -->
+
+        <!-- Contact Section Start  -->
+        <footer class="relative">
+            <div class="bg-black">
+                <div class="py-14 xl:py-30 2xl:py-32 mx-10 xl:mx-16 2xl:mx-80">
+                    <div
+                        class="relative grid grid-cols-1 justify-center gap-x-[90px] gap-y-16 lg:grid-cols-[1fr_minmax(0,0.6fr)]">
+                        <div class="contact-details relative">
+                            <h1 class="text-white font-syne font-bold text-4xl xl:text-6xl 2xl:text-font-72">Let's start
+                                <span class="inline-flex items-center gap-5">a
+                                    <img src="./assets/img/shape-light-lime-5-arms-star.svg"
+                                        class="inline-flex w-8 xl:w-14 2xl:w-14" alt=""></span>project together
+                            </h1>
+                            <p class="text-white text-lg xl:text-xl 2xl:text-xl font-inter mt-5">We work closely with
+                                our clients to understand
+                                their objectives, target audience, and unique needs. We use our creative skills to
+                                translate these requirements and practical design solutions.</p>
+
+                            <ul class="mt-8 flex flex-col gap-5">
+                                <li>
+                                    <h5 class="text-xl xl:text-2xl 2xl:text-2xl font-syne  text-colorLightLime">Give us
+                                        a call:</h5>
+                                    <p class="text-xl xl:text-2xl 2xl:text-2xl font-syne text-white">(123) 456-7890</p>
+                                </li>
+                                <li>
+                                    <h5 class="text-xl xl:text-2xl 2xl:text-2xl font-syne text-colorLightLime">Send us
+                                        an email:</h5>
+                                    <p class="text-xl xl:text-2xl 2xl:text-2xl font-syne text-white">yourmail@email.com
+                                    </p>
+                                </li>
+                            </ul>
+
+
+                            <div class="flex mt-7 gap-5">
+                                <a href="#"
+                                    class="flex items-center justify-center w-[35px] h-[35] p-2 border border-white rounded-full"><img
+                                        src="./assets/img/icon-logo-buttery-white-twitter.svg" class=""></a>
+                                <a href="#"
+                                    class="flex items-center justify-center w-[35px] h-[35] p-2 border border-white rounded-full"><img
+                                        src="./assets/img/icon-logo-buttery-white-facebook.svg" class=""></a>
+                                <a href="#"
+                                    class="flex items-center justify-center w-[35px] h-[35] p-2 border border-white rounded-full"><img
+                                        src="./assets/img/icon-logo-buttery-white-instagram.svg" class=""></a>
+                                <a href="#"
+                                    class="flex items-center justify-center w-[35px] h-[35] p-2 border border-white rounded-full"><img
+                                        src="./assets/img/icon-logo-buttery-white-linkedin.svg" class=""></a>
+                            </div>
+
+                            <img class="hidden 2xl:block absolute bottom-10 right-0 h-auto max-w-72"
+                                src="./assets/img/element-light-lime-curve-arrow.svg" alt="">
+                        </div>
+
+                        <div class="contact-form">
+                            <h4 class="text-white font-syne text-3xl mb-5">Send us a message</h4>
+                            <form action="" class="flex flex-col">
+                                <input type="text"
+                                    class="text-base xl:text-lg 2xl:text-lg font-syne font-bold text-[#cccccc] placeholder:text-white px-5 py-3  mb-6 border-[#cccccc] border-2 bg-transparent rounded-full h-[62px] "
+                                    placeholder="Your Name">
+                                <input type="text"
+                                    class="text-base xl:text-lg 2xl:text-lg font-syne font-bold text-[#cccccc] placeholder:text-white px-5 py-3  mb-6 border-[#cccccc] border-2 bg-transparent rounded-full h-[62px] "
+                                    placeholder="Your email address">
+                                <input type="text"
+                                    class="text-base xl:text-lg 2xl:text-lg font-syne font-bold text-[#cccccc] placeholder:text-white px-5 py-3  mb-6 border-[#cccccc] border-2 bg-transparent rounded-full h-[62px] "
+                                    placeholder="Your phone number">
+                                <textarea name=""
+                                    class="text-base xl:text-lg 2xl:text-lg font-syne font-bold text-[#cccccc] placeholder:text-white px-5 py-3 mb-6 border-[#cccccc] border-2 bg-transparent rounded-2xl "
+                                    cols="30" rows="5" placeholder="Write your message here..."></textarea>
+
+                                <a href="#"
+                                    class="bg-lime-400 border-2 border-black shadow-bottom hover:shadow-none items-center inline-flex gap-10 py-2 px-8 pr-1 text-lg font-bold font-inter rounded-full justify-between">
+                                    Send message <img class="bg-black p-2 rounded-full w-[45px] h-[45px]"
+                                        src="./assets/img/icon-buttery-white-arrow-right.svg" alt="">
+                                </a>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl:mx-16 2xl:mx-80">
+                    <hr class="bg-[#333333] opacity-10">
+                </div>
+                <div class="py-7 mx-10 xl:mx-16 2xl:mx-80">
+                    <div
+                        class="copyright flex flex-col xl:flex-row 2xl:flex-row gap-y-4 items-center  xl:justify-between 2xl:justify-between  ">
+                        <a href="#"><img src="./assets/img/logo-buttery-white.svg" alt=""></a>
+                        <p class="font-normal font-inter text-lg text-white">© Copyright 2024, All Rights Reserved by
+                            Mthemeus</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Contact Section End -->
+
+        <!-- Back to top button -->
+        <a id="button"
+            class="flex justify-center items-center z-50 bg-colorLightLime w-[40px] xl:w-[50px] 2xl:w-[50px] h-[40px] xl:h-[50px] 2xl:h-[50px] text-center rounded-lg fixed bottom-[50px] right-4 2xl:right-10 invisible opacity-0 transition border-cyan-50 border hover:cursor-pointer hover:bg-black hover:text-white active:bg-black">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+        <!-- <a id="button"><img src="./assets/img/toptobottom.png" alt=""></a> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/gsap.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
